@@ -73,7 +73,7 @@ void conectarWiFi() {
 }
 
 bool abrirConexaoTCP() {
-  String cmd = "AT+CIPSTART=\"TCP\",\"192.168.47.125\",3000";
+  String cmd = "AT+CIPSTART=\"TCP\",\"192.168.240.125\",3000";
   Serial.println("Abrindo conexão TCP...");
   for (int tentativa = 0; tentativa < 3; tentativa++) {
     if (enviarComando(cmd.c_str(), "OK", 5000)) {
